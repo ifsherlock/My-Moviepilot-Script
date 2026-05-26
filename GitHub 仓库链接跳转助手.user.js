@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @description  点击悬浮框，自动从 GitHub Raw 链接跳转到对应的仓库页面
 // @author       Jaysh
-// @homepageURL  https://github.com/ifsherlock/
+// @homepageURL  https://github.com/jaysh/
 // @supportURL   https://github.com/jaysh/
 // @match        https://raw.githubusercontent.com/*
 // @icon         https://github.githubassets.com/favicons/favicon-dark.svg
@@ -33,6 +33,8 @@
 // @run-at       document-end
 // @name:zh-CN   GitHub 仓库链接跳转助手
 // @description:zh-CN  点击悬浮框，自动解析 GitHub Raw 链接并跳转到对应的仓库页面
+// @downloadURL https://github.com/ifsherlock/My-Moviepilot-Script/raw/refs/heads/main/GitHub%20仓库链接跳转助手.user.js
+// @updateURL   https://github.com/ifsherlock/My-Moviepilot-Script/raw/refs/heads/main/GitHub%20仓库链接跳转助手.user.js
 // ==/UserScript==
 
 (() => {
