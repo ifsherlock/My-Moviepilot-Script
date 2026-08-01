@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LINUX.DO NGA Theme
 // @namespace    https://linux.do/
-// @version      2.3.4
+// @version      2.3.5
 // @description  为 LINUX.DO 增加 NGA 与 NGA Plus 主题，并提供独立的 NGA Logo 开关。
 // @author       Codex
 // @match        https://linux.do/*
@@ -1068,6 +1068,126 @@
       html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--bottom .post__collapse-button:focus-visible {
         background: #f0d39a !important;
         border-color: #8b5b25 !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post--has-replies-above > .post__row:first-child {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        width: 100% !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post--has-replies-above > .post__row:first-child > .post__embedded-posts--top {
+        background: #edce8f !important;
+        border-bottom: 1px solid #bc934e !important;
+        box-sizing: border-box;
+        grid-column: 1 !important;
+        margin: 0 !important;
+        max-width: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top > .reply {
+        box-sizing: border-box;
+        width: 100% !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top > .reply + .reply {
+        border-top: 1px solid #bc934e;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top > .reply > .row {
+        align-items: stretch;
+        display: grid !important;
+        grid-template-columns: 72px minmax(0, 1fr) !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-avatar {
+        background: #edce8f !important;
+        border-right: 1px solid #c9ac70;
+        box-sizing: border-box;
+        display: flex;
+        height: auto !important;
+        min-height: 100%;
+        padding: 10px !important;
+        width: auto !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-avatar .post-avatar {
+        margin: 0 !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-avatar .avatar {
+        height: 48px !important;
+        width: 48px !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-avatar .avatar-flair {
+        bottom: -3px !important;
+        right: -4px !important;
+        transform: scale(.78);
+        transform-origin: bottom right;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-body {
+        background: #edce8f !important;
+        box-sizing: border-box;
+        margin: 0 !important;
+        max-width: none !important;
+        min-width: 0;
+        padding: 0 12px 8px !important;
+        width: 100% !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular article[data-nga-plus-enhanced] .post__embedded-posts--top .topic-meta-data.embedded-reply {
+        align-items: center;
+        border-bottom: 1px solid rgb(188 147 78 / 55%);
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        min-height: 36px;
+        padding: 6px 0 !important;
+        width: 100%;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular article[data-nga-plus-enhanced] .post__embedded-posts--top .topic-meta-data .names {
+        align-items: baseline;
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 3px 7px;
+        min-width: 0;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-meta-data .names a {
+        color: #591804 !important;
+        font-weight: 700;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-meta-data .second a,
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .topic-meta-data .user-title {
+        color: #80644d !important;
+        font-size: 11px;
+        font-weight: 400;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .post-link-arrow {
+        margin-left: auto;
+        position: static !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .post-link-arrow .post-info {
+        color: #754b2f !important;
+        font-size: 11px;
+        white-space: nowrap;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .post__embedded-posts--top .cooked {
+        margin: 0 !important;
+        max-width: none !important;
+        padding: 8px 0 2px !important;
+        width: 100% !important;
       }
 
       html.${PLUS_CLASS} body.archetype-regular .topic-navigation {
