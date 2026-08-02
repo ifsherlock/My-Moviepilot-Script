@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LINUX.DO NGA Theme
 // @namespace    https://linux.do/
-// @version      2.3.5
+// @version      2.3.6
 // @description  为 LINUX.DO 增加 NGA 与 NGA Plus 主题，并提供独立的 NGA Logo 开关。
 // @author       Codex
 // @match        https://linux.do/*
@@ -677,6 +677,18 @@
         display: grid !important;
         grid-template-columns: 184px minmax(0, 1fr);
         width: 100%;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .topic-post .post__row:has(> .post-notice) {
+        grid-template-columns: minmax(0, 1fr) !important;
+      }
+
+      html.${PLUS_CLASS} body.archetype-regular .topic-post .post__row > .post-notice {
+        box-sizing: border-box;
+        grid-column: 1 / -1 !important;
+        margin: 0 !important;
+        max-width: none !important;
+        width: 100% !important;
       }
 
       html.${PLUS_CLASS} body.archetype-regular .topic-post .topic-avatar {
