@@ -12,6 +12,7 @@
 | LINUX.DO NGA Theme | 2.3.7 | 为 LINUX.DO 增加 `nga` 和 `nga plus` 主题 | [安装](https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/linuxdo-nga-theme.user.js) | [查看](./linuxdo-nga-theme.user.js) |
 | NotePod++ FNOS 助手 | 1.0.0 | 在 FNOS 文件管理器中使用 NotePod++ 编辑和新建文件 | [安装](<https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/NotePod%2B%2B%20FNOS%20%E5%8A%A9%E6%89%8B.user.js>) | [查看](<./NotePod++ FNOS 助手.user.js>) |
 | GitHub 仓库链接跳转助手 | 1.0.0 | 从 GitHub Raw 页面快速返回对应仓库 | [安装](<https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/GitHub%20%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E5%8A%A9%E6%89%8B.user.js>) | [查看](<./GitHub 仓库链接跳转助手.user.js>) |
+| Redirect t.me to telegram.dog | 1.0.0 | 将失效的 `t.me` 地址改写到 `telegram.dog` | [安装](https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/redirect-t-me-to-telegram-dog.user.js) | [查看](./redirect-t-me-to-telegram-dog.user.js) |
 
 MoviePilot 脚本的文件名当前以 `.js` 结尾。如果点击后浏览器只显示源码，请在脚本管理器的“实用工具”中选择“从 URL 安装”，并使用表格中的安装地址。
 
@@ -69,6 +70,17 @@ MoviePilot 地址、API Key 和 TMDB API Key 保存在当前用户脚本的本�
 - 页面中检测到多个 Raw 链接时，以列表形式展示对应仓库。
 - 自动合并同一仓库的多个链接，避免重复项目。
 - 支持 Tampermonkey 和 Violentmonkey 常见的 `GM_*` / `GM.*` 接口。
+
+## Redirect t.me to telegram.dog
+
+将当前页面或网页中的 `t.me` 链接改写为 `telegram.dog`，用于无法正常打开 `t.me` 时继续进入 Telegram 深链接。
+
+- 访问 `t.me/...` 时直接保留路径和查询参数并跳转到 `telegram.dog/...`。
+- 将 `username.t.me/path` 改写为 `telegram.dog/username/path`。
+- 扫描页面已有链接，并持续处理动态加载或后来修改的链接。
+- 在点击阶段再次检查目标地址，覆盖未被页面扫描捕获的链接。
+
+为了处理任意网站中的 Telegram 链接，脚本会匹配所有 HTTP/HTTPS 页面；它使用 `@grant none`，不会申请油猴存储或跨域请求权限。
 
 ## 更新与安全
 
