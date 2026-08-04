@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         LINUX.DO NGA Theme
 // @namespace    https://linux.do/
-// @version      2.3.6
+// @version      2.3.7
 // @description  为 LINUX.DO 增加 NGA 与 NGA Plus 主题，并提供独立的 NGA Logo 开关。
 // @author       Codex
 // @match        https://linux.do/*
 // @match        https://www.linux.do/*
+// @updateURL    https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/linuxdo-nga-theme.user.js
+// @downloadURL  https://raw.githubusercontent.com/ifsherlock/My-Moviepilot-Script/main/linuxdo-nga-theme.user.js
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
