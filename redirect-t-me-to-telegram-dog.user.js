@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Redirect t.me to telegram.dog
-// @namespace    https://jaysherlock.local/
-// @version      1.0.0
+// @namespace    https://github.com/ifsherlock/My-Moviepilot-Script
+// @version      1.0.1
 // @description  Redirect broken t.me links to a working Telegram deep-link entrance.
 // @author       jaysherlock
 // @match        http://t.me/*
